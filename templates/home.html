@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+<!--    https://getbootstrap.com/docs/4.6/getting-started/introduction/-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f8ca3d18f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--   colors: primary, dark, danger, success, info, warning, white, secondary, muted-->
+<!--https://hackerthemes.com/bootstrap-cheatsheet/-->
+<!--navbar here-->
+<section class="row bg-warning" style="padding:3%">
+    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                      <img src="../static/logo2.png" alt="" width="100" height="50">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link text-info" href="/">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-info" href="/shoes">Shoes</a>
+                      </li>
+
+                        <style>
+                            .dropdown:hover>.dropdown-menu{
+                            display:block;
+                            }
+                            .dropdown>.dropdown-toggle:active{
+                            }
+                        </style>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#"
+                        id="navbardrop"data-toggle="dropdown" >Clothes</a>
+                          <div class="dropdown-menu">
+                              <a href="/clothes" class="dropdown-item">Hoodies</a>
+                               <a href="" class="dropdown-item">Jeans</a>
+                               <a href="" class="dropdown-item">Sweaters</a>
+                                <a href="" class="dropdown-item">Shirts</a>
+                               <a href="" class="dropdown-item">Pants</a>
+                               <a href="" class="dropdown-item">Jackets</a>
+                              </div>
+                      </li>
+
+                         <style>
+                            .dropdown:hover>.dropdown-menu{
+                            display:block;
+                            }
+                            .dropdown>.dropdown-toggle:active{
+                            }
+                        </style>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#"
+                        id="navbardrop1" data-toggle="dropdown">
+                            <i class="fas fa-user"></i>Account</a>
+                          <div class="dropdown-menu">
+                              <a href="/login" class="dropdown-item">Sign In</a>
+                               <a href="/signup" class="dropdown-item">Sign Up</a>
+
+                              </div>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+    </div>
+
+</section>
+
+<section class="row">
+    <div class="col-md-12">
+        <div class="bd-example">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="../static/slide1.jpg" >
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../static/slide2.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <i class="fas fa-arrow-circle-left"
+                      style="font-size:30px;color:orange"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                     <i class="fas fa-arrow-circle-right"
+                      style="font-size:30px;color:orange"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                    </div>
+
+</section>
+<div class="container">
+    <h2>SHOES ENTERPRISES</h2>
+    <section class="row">
+        <div class="col-md-8">
+            <h3 class="bg-warning text-white">Welcome to Shoes Enterprises</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolorem dolores eos esse eum ex expedita impedit in iure modi nihil nisi officiis porro provident quis repudiandae saepe, similique tenetur?</p>
+            <h3>Our Client</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto cum dolorem, ducimus error fuga molestias non quisquam quod saepe tempore ut, velit vitae. Aliquid debitis deserunt officia repellendus rerum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium architecto, corporis distinctio dolorem ducimus eveniet, fugit id maxime molestiae non nulla odit pariatur, placeat porro quaerat quia voluptate voluptatum.</p>
+            <a href="" class="btn btn-outline-warning">Read More</a>
+        </div>
+        <div class="col-md-4">
+            <img src="../static/rubber1.jpg" alt="" class="img-fluid">
+        </div>
+    </section>
+<!--    2nd section-->
+    <section>
+        <br>
+        <h3>OUR PRODUCTS</h3>
+        <section class="row">
+            <diV class="col-md-4">
+                <h4>sport shoes</h4>
+                <img src="../static/sport.jpeg" alt="" class="img-fluid" width="50%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor dolore in ipsa ipsum iusto labore libero magni minima mollitia nemo officiis omnis, perferendis placeat quae quam quas recusandae velit?</p>
+                <a href="" class="btn btn-outline-warning">Read More</a>
+            </diV>
+            <div class="col-md-4">
+                <h4>sandals</h4>
+                <img src="../static/sandal.jpeg" alt="" class="img-fluid" width="50%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor dolore in ipsa ipsum iusto labore libero magni minima mollitia nemo officiis omnis, perferendis placeat quae quam quas recusandae velit?</p>
+                <a href="" class="btn btn-outline-warning">Read More</a>
+            </div>
+            <div class="col-md-4">
+                <h4>Boots shoes</h4>
+                <img src="../static/boot.jpg" alt="" class="img-fluid" width="45%">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolor dolore in ipsa ipsum iusto labore libero magni minima mollitia nemo officiis omnis, perferendis placeat quae quam quas recusandae velit?</p>
+                <a href="" class="btn btn-outline-warning">Read More</a>
+            </div>
+        </section>
+        <br>
+        <h3>TRENDING</h3>
+        <section class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../static/trending.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p>sandals on offer, Hurry before stock lasts...</p>
+                        <b class="text-warning">KES1,200</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../static/trending2.jpeg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>Heels on offer, Hurry before stock lasts...</p>
+                        <b class="text-warning">KES1,000</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../static/trending3.jpeg" alt="" class="img-fluid" width="40%">
+                    <div class="card-body">
+                        <p>Designer on offer, Hurry before stock lasts...</p>
+                        <b class="text-warning">KES999</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../static/trending4.jpg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>Leather Boots on offer, Hurry before stock lasts...</p>
+                        <b class="text-warning">KES2,000</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+          <h3>NIKE DEALS UPTO 30%off</h3>
+        <section class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike1.jpeg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>On offer, Hurry before stock lasts...</p>
+                        <b><strike>KES1,800</strike></b>
+                        <b class="text-warning">KES1,200</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike2.jpeg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>On offer, Hurry before stock lasts...</p>
+                        <b><strike>KES1,500</strike></b>
+                        <b class="text-warning">KES1,000</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike3.jpeg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>On offer, Hurry before stock lasts...</p>
+                        <b><strike>KES2,000</strike></b>
+                        <b class="text-warning">KES1,500</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike4.jpeg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p>On offer, Hurry before stock lasts...</p>
+                        <b><strike>KES3,500</strike></b>
+                        <b class="text-warning">KES2,800</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike5.jpeg" alt="" class="img-fluid" width="70%">
+                    <div class="card-body">
+                        <p>on offer, Hurry before stock lasts...</p>
+                        <b><strike>KES3,500</strike></b>
+                        <b class="text-warning">KES2,500</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="col-md-2">
+                <div class="card">
+                    <img src="../static/nike6.jpeg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <p>on offer, Hurry before stock lasts...</p>
+                        <b><strike>KES3,500</strike></b>
+                        <b class="text-warning">KES2,800</b> <br>
+                        <a href=""class="btn btn-info">Buy Now</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </section>
+    <br>
+    <hr>
+    <section class="row">
+        <div class="col-md-4">
+            <h3>Shoes Enterprise</h3>
+            <p class="text-muted">We are a medium sized company focusing on selling a wide variety of shoes <br>
+                <b>Email</b> <i>info@shoesenterprises.com</i> <br>
+                <b>Tel:</b> <i>+254726125964</i> <br>
+                <b> Follow us on;</b> <br>
+                <a href="">
+                <i class="fab fa-instagram" style="font-size:40px; color:#8a3ab9"></i>
+                </a>
+                <a href="">
+                <i class="fab fa-facebook" style="font-size:40px; color:blue"></i>
+                </a>
+                <a href="">
+                <i class="fab fa-youtube" style="font-size:40px; color:red"></i>
+                </a>
+                <a href="">
+                <i class="fab fa-twitter" style="font-size:40px; color:#1DA1F2"></i>
+                </a>
+
+            </p>
+
+        </div>
+
+        <div class="col-md-4">
+            <i class="far fa-clock" style="font-size:35px; color: orange"></i> <br>
+            <b>WE are open between 8AM - 5PM weekdays </b> <br>
+            <b>from 9AM - 4PM on Weekends</b> <br>
+            <b>We remain closed closed on public holidays</b> <br>
+            <i class="fas fa-phone" style="font-size:30px; color: orange"></i> <br>
+            <b class="text-warning">Customer care</b> <br>
+            <b>+254 726 *** ***</b> <br>
+            <b>+254 726 *** ***</b> <br>
+            <b>+254 726 *** ***</b> <br>
+
+        </div>
+
+        <div class="col-md-4">
+            <i class="fas fa-user-friends" style="font-size:30px; color: orange"></i> <br>
+            <b class="text-warning">Subscribe Newsletter</b>
+            <p class="text-muted">Subscribe to our newsletter to receive special offers</p>
+            <form action="">
+                <input type=email" placeholder="Your Email">
+                <input type="submit" class="btn btn-warning" value="Send">
+            </form>
+            <b>We Accept</b> <br>
+            <i class="fab fa-cc-visa" style="font-size40px;"></i>
+            <i class="fab fa-cc-paypal" style="font-size40px;"></i>
+            <i class="fab fa-cc-mastercard" style="font-size40px;"></i>
+            <img src="../static/lipa.png" alt="" width="30%">
+        </div>
+
+    </section>
+
+</div>
+<footer class="row" style="background:orange; color:white;text-align:center; padding:1%">
+    <div class="col-md-12">
+        <b>copyright &copy; 2021 - All rights reserved.</b>
+        <i>Customer care: 254 722 539 176</i>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

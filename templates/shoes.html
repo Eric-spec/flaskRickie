@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+<body>
+<section class="row bg-warning" style="padding:3%">
+    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                      <img src="../static/logo2.png" alt="" width="100" height="50">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link text-info" href="/">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-info" href="/shoes">Shoes</a>
+                      </li>
+
+                        <style>
+                            .dropdown:hover>.dropdown-menu{
+                            display:block;
+                            }
+                            .dropdown>.dropdown-toggle:active{
+                            }
+                        </style>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#"
+                        id="navbardrop"data-toggle="dropdown" >Clothes</a>
+                          <div class="dropdown-menu">
+                              <a href="/clothes" class="dropdown-item">Hoodies</a>
+                               <a href="" class="dropdown-item">Jeans</a>
+                               <a href="" class="dropdown-item">Sweaters</a>
+                                <a href="" class="dropdown-item">Shirts</a>
+                               <a href="" class="dropdown-item">Pants</a>
+                               <a href="" class="dropdown-item">Jackets</a>
+                              </div>
+                      </li>
+
+                         <style>
+                            .dropdown:hover>.dropdown-menu{
+                            display:block;
+                            }
+                            .dropdown>.dropdown-toggle:active{
+                            }
+                        </style>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#"
+                        id="navbardrop1" data-toggle="dropdown">
+                            <i class="fas fa-user"></i>Account</a>
+                          <div class="dropdown-menu">
+                              <a href="/login" class="dropdown-item">Sign In</a>
+                               <a href="/signup" class="dropdown-item">Sign Up</a>
+
+                          </div>
+                      </li>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+    </div>
+
+</section>
+    <div class="container">
+
+        {% if session.user %}
+             Welcome:
+             {{session.user}} <a href="/logout">Logout</a>
+
+        {% else %}
+            Not Logged In <a href="/login">Login Here
+
+        {% endif %}
+
+
+        <h3>TOP SELLING BRANDS</h3>
+        <section class="row">
+            {% for row in rows %}
+                <div class="col-md-3 card">
+                    <h2>{{row[2]}}</h2>
+                    <img src="../static/{{row[12]}}" alt="" class="img-fluid">
+                    <br>
+                    <p class="text-muted">{{row[3]}}</p>
+                    <b><strike>KES {{row[6]}}</strike> <b>KES {{row[7]}}</b> </b>
+                    <br>
+                    <a href="/single/{{row[0]}}" class="btn btn-info">Read More</a>
+                    <br> <br>
+                </div>
+            {% endfor %}
+        </section>
+
+    </div>
+<footer class="row" style="background:orange; color:white;text-align:center; padding:1%">
+    <div class="col-md-12">
+        <b>copyright &copy; 2021 - All rights reserved.</b>
+        <i>Customer care: 254 722 539 176</i>
+    </div>
+</footer>
+
+</body>
+</html>
